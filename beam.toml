@@ -1,0 +1,46 @@
+# Provisional source scaffold: compilation and runtime integration are unfinished.
+format = 1
+
+[package]
+name = "erlangsters/proper"
+version = "0.0.1"
+
+[build]
+sources = [
+    "src/vararg.erl",
+    "src/proper.erl",
+    "src/proper_arith.erl",
+    "src/proper_array.erl",
+    "src/proper_dict.erl",
+    "src/proper_erlang_abstract_code.erl",
+    "src/proper_fsm.erl",
+    "src/proper_gb_sets.erl",
+    "src/proper_gb_trees.erl",
+    "src/proper_gen.erl",
+    "src/proper_gen_next.erl",
+    "src/proper_orddict.erl",
+    "src/proper_ordsets.erl",
+    "src/proper_prop_remover.erl",
+    "src/proper_queue.erl",
+    "src/proper_sa.erl",
+    "src/proper_sets.erl",
+    "src/proper_shrink.erl",
+    "src/proper_statem.erl",
+    "src/proper_symb.erl",
+    "src/proper_target.erl",
+    "src/proper_transformer.erl",
+    "src/proper_types.erl",
+    "src/proper_typeserver.erl",
+    "src/proper_unicode.erl",
+    "src/proper_unused_imports_remover.erl",
+]
+include-directories = ["include"]
+
+[exports]
+headers = [
+    "include/proper.hrl",
+    "include/proper_common.hrl",
+    "include/proper_internal.hrl",
+    "include/proper_param_adts.hrl",
+]
+licenses = ["COPYING"]
